@@ -6,4 +6,8 @@ There is a uv.lock file and virtual environment(.venv) -
 
 
 Below is the output I got: 
+
+
+
 <img width="817" height="191" alt="image" src="https://github.com/user-attachments/assets/95acb891-f315-42b4-810e-a39e30ce00bc" />
+
