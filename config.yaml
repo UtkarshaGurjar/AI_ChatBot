@@ -1,0 +1,14 @@
+model_list:
+  # Route all models through Bedrock
+  - model_name: bedrock/*
+    litellm_params:
+      model: bedrock/*
+      aws_profile_name: gunutkar
+      aws_region_name: us-east-1
+
+  # Map OpenAI requests to Bedrock model
+  - model_name: gpt-4-turbo
+    litellm_params:
+      model: bedrock/anthropic.claude-3-sonnet-20240229-v1:0
+      aws_profile_name: gunutkar
+      aws_region_name: us-east-1
