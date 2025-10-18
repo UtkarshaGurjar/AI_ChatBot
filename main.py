@@ -16,18 +16,7 @@ def say_hello(name: str):
    
 
 def main():
-  # print("Hello from chatbot!")
-  # client = openai.OpenAI(api_key="Dummy", base_url="http://0.0.0.0:47514") 
-
-  # response = client.chat.completions.create(model="gpt-3.5-turbo", messages = [{
-  #       "role": "user",
-  #       "content": "this is a test request, write a short poem"
-  #   }
-  # ])
-
-  # print(response)
-
-  model = ChatOpenAI(openai_api_key="anything", openai_api_base="http://0.0.0.0:14978", model="gpt-4-turbo")
+  model = ChatOpenAI(openai_api_key="anything", openai_api_base="http://0.0.0.0:4000", model="gpt-4-turbo")
 
   tools = [calculator, say_hello]
 
